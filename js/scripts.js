@@ -5,7 +5,6 @@ $(document).ready(function() {
 
     $("#boom").click(function() {
         $("#outer_calculator").hide();
-        $("#why").show();
     });
 
     $("#clear").click(function() {
