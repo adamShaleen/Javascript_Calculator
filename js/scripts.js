@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-    $("#why").hide();
-
     $("#display_text").html("0");
     var computation = [];
 
@@ -17,7 +15,7 @@ $(document).ready(function() {
 
     $(":button").click(function() {
         var pressedButton = $(this).val();
-        if (pressedButton !== "=" && pressedButton !== "boom" && pressedButton !== "clear") {
+        if (pressedButton !== "=" && pressedButton !== "clear") {
             computation.push($(this).val());
             $("#display_text").html(computation);
         }
