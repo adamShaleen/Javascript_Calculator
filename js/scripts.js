@@ -1,14 +1,32 @@
 $(document).ready(function() {
 
-    // Running variable for inputs
-    var computation = "";
+    $("#why").hide();
 
-    // On load display 0
     $("#display_text").html("0");
+    var computation = [];
 
-    $(":button").off();
-    $(":button").click(function() {
-        computation += $(this).val();
-        console.log(computation);
+    $("#boom").click(function() {
+        $("#outer_calculator").hide();
+        $("#why").show();
     });
-}); // end tag
+
+    $("#clear").click(function() {
+        computation = [];
+        $("#display_text").html("0");
+    });
+
+    $(":button").click(function() {
+        var pressedButton = $(this).val();
+        if (pressedButton !== "=" && pressedButton !== "boom" && pressedButton !== "clear") {
+            computation.push($(this).val());
+            $("#display_text").html(computation);
+        }
+    });
+
+    $("#equals").click(function() {
+        var output = eval(computation.join(""));
+        computation = [output];
+        $("#display_text").html(output);
+    });
+
+});

@@ -6,6 +6,8 @@
         <title>Javascript Calculator</title>
     </head>
     <body>
+
+        <h1 id="why">WHY DID YOU PRESS THAT BUTTON!?</h1>
         <div id="outer_calculator">
 
             <div id="display">
@@ -13,6 +15,11 @@
             </div>
 
             <div id="button_container">
+
+                <div class="button_row">
+                    <button id="boom" value="boom" class="number_button"><img id="skull" src="https://d30y9cdsu7xlg0.cloudfront.net/png/5051-200.png" /></button>
+                    <button id="clear" value="clear" class="number_button">CLEAR</button>
+                </div>
 
                 <div class="button_row">
                     <button value="7" class="button number_button">7</button>
@@ -39,7 +46,7 @@
                     <button value="0" class="button number_button">0</button>
                     <button value="." class="button number_button">.</button>
                     <button value="%" class="button function_button">%</button>
-                    <button value="=" class="button function_button">=</button>
+                    <button id="equals" value="=" class="button function_button">=</button>
                 </div>
 
                 <div class="button_row">

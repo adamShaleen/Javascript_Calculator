@@ -1,11 +1,13 @@
 body {
     margin-top: 50px;
+    text-align: center;
+    background-color: rgb(232, 201, 137);
 }
 
 #outer_calculator {
     margin: auto;
     width: 400px;
-    height: 530px;
+    height: 620px;
     border: 1px solid;
     border-radius: 3%;
     background-color: rgb(51, 51, 50);
@@ -35,6 +37,23 @@ body {
 .button_row {
     display: flex;
     justify-content: space-around;
+}
+
+#boom {
+    box-shadow: 2px 2px grey;
+    font-size: 25px;
+}
+
+#skull {
+    width: 40px;
+    height: 40px;
+}
+
+#clear {
+    width: 210px;
+    height: 50px;
+    box-shadow: 2px 2px grey;
+    font-size: 25px;
 }
 
 .button {
